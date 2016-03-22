@@ -1,0 +1,3 @@
+PACKAGE_FILE=gzip-1.6.tar.xz
+PACKAGE_NAME=gzip
+PACKAGE_DIR_NAME=gzip-1.6

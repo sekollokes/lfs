@@ -1,0 +1,3 @@
+PACKAGE_FILE=texinfo-6.1.tar.xz
+PACKAGE_NAME=texinfo
+PACKAGE_DIR_NAME=texinfo-6.1

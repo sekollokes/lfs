@@ -1,0 +1,3 @@
+PACKAGE_FILE=make-4.1.tar.bz2
+PACKAGE_NAME=make
+PACKAGE_DIR_NAME=make-4.1

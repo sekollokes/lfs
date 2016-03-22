@@ -1,0 +1,3 @@
+PACKAGE_FILE=diffutils-3.3.tar.xz
+PACKAGE_NAME=diffutils
+PACKAGE_DIR_NAME=diffutils-3.3

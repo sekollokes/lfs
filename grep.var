@@ -1,0 +1,3 @@
+PACKAGE_FILE=grep-2.23.tar.xz
+PACKAGE_NAME=grep
+PACKAGE_DIR_NAME=grep-2.23

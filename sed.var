@@ -1,0 +1,3 @@
+PACKAGE_FILE=sed-4.2.2.tar.bz2
+PACKAGE_NAME=sed
+PACKAGE_DIR_NAME=sed-4.2.2

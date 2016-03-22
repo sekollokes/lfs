@@ -1,0 +1,3 @@
+PACKAGE_FILE=gettext-0.19.7.tar.xz
+PACKAGE_NAME=gettext
+PACKAGE_DIR_NAME=gettext-0.19.7

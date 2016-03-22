@@ -1,0 +1,3 @@
+PACKAGE_FILE=glibc-2.23.tar.xz
+PACKAGE_NAME=glibc
+PACKAGE_DIR_NAME=glibc-2.23

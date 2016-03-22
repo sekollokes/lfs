@@ -1,0 +1,3 @@
+PACKAGE_FILE=perl-5.22.1.tar.bz2
+PACKAGE_NAME=perl
+PACKAGE_DIR_NAME=perl-5.22.1

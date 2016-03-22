@@ -1,0 +1,3 @@
+PACKAGE_FILE=util-linux-2.27.1.tar.xz
+PACKAGE_NAME=util-linux
+PACKAGE_DIR_NAME=util-linux-2.27.1

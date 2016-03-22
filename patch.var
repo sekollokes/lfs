@@ -1,0 +1,3 @@
+PACKAGE_FILE=patch-2.7.5.tar.xz
+PACKAGE_NAME=patch
+PACKAGE_DIR_NAME=patch-2.7.5

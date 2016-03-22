@@ -1,0 +1,61 @@
+#!/bin/bash
+
+source m4.var
+
+if [ ! -e $LFS/logs1/$PACKAGE_NAME ]; then
+	mkdir $LFS/logs1/$PACKAGE_NAME
+fi
+
+tar xf $PACKAGE_FILE
+
+
+configure_commands()
+{ :
+cd $PACKAGE_DIR_NAME
+./configure --prefix=/tools
+
+
+}
+
+make_commands()
+{ :
+cd $PACKAGE_DIR_NAME
+make
+#make check
+}
+
+install_commands()
+{ :
+cd $PACKAGE_DIR_NAME
+make install
+}
+
+
+test_pipe()
+{
+  for i in "${PIPESTATUS[@]}" 
+  do
+    test $i != 0 && { echo FAILED! ; exit 1 ; }
+  done
+  echo successful!
+  return 0
+}
+
+echo -n Configuring...
+
+{ configure_commands 3>&1 1>&2 2>&3 | tee "$LFS/logs1/$PACKAGE_NAME/configure.err" ;} &>"$LFS/logs1/$PACKAGE_NAME/configure.log"
+test_pipe
+# NOTE: Simply using && instead of test_pipe would not work, because &&
+# only tests the exit status of the last command in the pipe, which is tee.
+
+echo -n Building...
+
+{ make_commands 3>&1 1>&2 2>&3 | tee "$LFS/logs1/$PACKAGE_NAME/make.err" ;} &>"$LFS/logs1/$PACKAGE_NAME/make.log"
+test_pipe
+
+echo -n Installing...
+
+{ install_commands 3>&1 1>&2 2>&3 | tee "$LFS/logs1/$PACKAGE_NAME/install.err" ;} &>"$LFS/logs1/$PACKAGE_NAME/install.log"
+test_pipe
+
+rm -rf $PACKAGE_DIR_NAME
