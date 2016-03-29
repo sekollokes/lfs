@@ -60,3 +60,4 @@ echo ./util-linux-stage1
 ./util-linux-stage1
 echo ./xz-stage1
 ./xz-stage1
+echo ./stripping-stage1
