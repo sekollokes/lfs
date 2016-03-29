@@ -6,4 +6,4 @@
 
 ./chroot
 
-
+./directories-stage2
