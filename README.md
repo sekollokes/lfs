@@ -3,3 +3,7 @@
 ./ovnership-stage1
 
 ./filesystems-stage2
+
+./chroot
+
+
