@@ -4,6 +4,8 @@
 
 ./filesystems-stage2
 
-./chroot
+./chroot-stage2
 
 ./directories-stage2
+
+./relogin-stage2
