@@ -9,3 +9,5 @@
 ./directories-stage2
 
 ./relogin-stage2
+
+./logfiles-stage2
